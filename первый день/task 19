@@ -1,9 +1,6 @@
 package demo;
 
-
 import java.util.Scanner;
-
-import static java.util.Collections.nCopies;
 
 public class test {
     public static void main(String[] args) {
