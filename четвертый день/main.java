@@ -19,7 +19,7 @@ public class  main {
     }
 }
 
-    class OutRangeException extends RuntimeException{
+    class OutRangeException extends Exception{
         public OutRangeException(String message) {
             super(message);
         }
