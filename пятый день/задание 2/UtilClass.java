@@ -34,7 +34,7 @@ public class UtilClass {
 
     public static <T> List<T> union(List<T> list1, List<T> list2) {
         if(isBlank(list1) && isBlank(list2))
-            return Collections.emptyList();;
+            return Collections.emptyList();
 
         List<T> res = new ArrayList<T>();
         res.addAll(list1);
