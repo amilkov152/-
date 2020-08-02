@@ -1,7 +1,6 @@
 package generic;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class UtilClass {
@@ -34,7 +33,7 @@ public class UtilClass {
 
     public static <T> List<T> union(List<T> list1, List<T> list2) {
         if(isBlank(list1) && isBlank(list2))
-            return Collections.emptyList();
+            return new ArrayList <> () ;
 
         List<T> res = new ArrayList<T>();
         res.addAll(list1);
@@ -44,9 +43,9 @@ public class UtilClass {
 
     public static <T> List<T> removeAll(List<T> list1, List<T> list2) {
         if(isBlank(list1) && isBlank(list2))
-            return Collections.emptyList();
+            return new ArrayList <> ();
         if (isBlank(list1))
-            return Collections.emptyList();
+            return new ArrayList <> ();
 
         List<T> res = new ArrayList<>(list1);
         if(isBlank(list2))
